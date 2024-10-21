@@ -17,12 +17,7 @@ const dominiosPermitidos = [process.env.FRONTEND_URL, 'http://172.30.3.31'];
 
 const corsOptions = {
     origin: function(origin, callback){
-        console.log(origin);
-        if(dominiosPermitidos.indexOf(origin) !== -1){
-            callback(null, true);
-        } else {
-            callback(new Error('No permitido por CORS'));
-        }
+        callback(null, true);
     }
 }
 
