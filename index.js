@@ -12,7 +12,7 @@ app.use(express.json());
 dotenv.config();
 
 conectarDB();
-
+/*
 const dominiosPermitidos = [process.env.FRONTEND_URL, 'http://172.30.3.31'];
 
 const corsOptions = {
@@ -22,6 +22,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
+*/
 
 app.use("/api/veterinarios", veterinarioRoutes);
 
