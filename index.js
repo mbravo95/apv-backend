@@ -13,7 +13,7 @@ dotenv.config();
 
 conectarDB();
 
-const dominiosPermitidos = [process.env.FRONTEND_URL];
+const dominiosPermitidos = [process.env.FRONTEND_URL, 'http://172.30.3.31'];
 
 const corsOptions = {
     origin: function(origin, callback){
