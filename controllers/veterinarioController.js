@@ -5,8 +5,6 @@ import emailRegistro from '../helpers/emailRegistro.js';
 import emailOlvidePassword from '../helpers/emailOlvidePassword.js';
 
 const registrar = async (req,res) => {
-    console.log(req.body);
-    console.log(req.params);
     const { email, nombre } = req.body;
 
     const existeUsuario = await Veterinario.findOne({email});
